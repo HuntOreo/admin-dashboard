@@ -1,0 +1,28 @@
+/* 
+  Color
+  ======
+*/
+.content header {
+  background-color: var(--tile-color);
+}
+
+main .projects > .container > .card {
+  background-color: var(--tile-color);
+}
+
+main .sub-portals > .twin {
+  background-color: var(--tile-color);
+}
+
+/* 
+  General 
+  ========
+*/
+.projects {
+  height: min-content;
+}
+
+.content .projects .card {
+  border-left: 6px solid var(--primary-yellow);
+  border-radius: 5px;
+}
