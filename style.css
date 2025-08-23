@@ -1,3 +1,20 @@
+:root {
+  --primary-blue: #12a2db;
+  --primary-yellow: #e5c409;
+}
+
+.light {
+  --bg-color: #dbdbdb;
+  --tile-color: #fff;
+  --primary-font-color: #000;
+}
+
+.dark {
+  --bg-color: #002e4d;
+  --tile-color: #003b62;
+  --primary-font-color: #fff;
+}
+
 html, body {
   min-height: 100vh;
 }
@@ -6,8 +23,11 @@ html, body {
 body > .container {
   display: grid;
   grid-template-columns: 1fr 5fr;  
-  gap: 10px;
+  gap: 15px;
   min-height: 100vh;
+
+  background-color: var(--bg-color);
+  color: var(--primary-font-color);
 }
 
 .sidebar {
@@ -24,15 +44,17 @@ header {
   background: lightblue;
 }
 
-section.content {
+.content {
   display: grid;
   grid-template-rows: 150px 5fr;
 }
 
 main {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr minmax(250px, auto);
+  grid-template-rows: 1fr;
   gap: 10px;
+  padding-bottom: 15px;
 }
 
 main .projects .container {
@@ -43,25 +65,10 @@ main .projects .container {
 
 main .projects .card {
   padding: 100px 0;
-
-  background-color: lightgreen;
 }
 
 main .sub-portals {
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 15px;
-
-}
-
-main .sub-portals .twin {
-  background: rgb(237, 237, 237);
-}
-
-main .sub-portals .announcements .container {
-  background: lightgoldenrodyellow;
-}
-
-main .sub-portals .trending .container {
-  background: violet;
 }
