@@ -48,9 +48,14 @@ main .projects .card {
 }
 
 main .sub-portals {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+
+}
+
+main .sub-portals .twin {
+  background: rgb(237, 237, 237);
 }
 
 main .sub-portals .announcements .container {
