@@ -6,11 +6,11 @@
   background-color: var(--tile-color);
 }
 
-main .projects > .container > .card {
+.content .projects .card {
   background-color: var(--tile-color);
 }
 
-main .sub-portals > .twin {
+.sub-portals .twin > .container {
   background-color: var(--tile-color);
 }
 
@@ -18,11 +18,26 @@ main .sub-portals > .twin {
   General 
   ========
 */
+.content {
+  gap: 15px;
+}
+
 .projects {
   height: min-content;
 }
 
 .content .projects .card {
   border-left: 6px solid var(--primary-yellow);
+  border-radius: 5px;
+}
+
+.sub-portals .twin {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-portals .twin > .container {
+  flex: 1;
+
   border-radius: 5px;
 }
