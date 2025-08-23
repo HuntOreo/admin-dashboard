@@ -1,13 +1,8 @@
-html {
+html, body {
   min-height: 100vh;
 }
 
-body {
-  min-height: 100vh;
-
-
-}
-
+/* Layout */
 body > .container {
   display: grid;
   grid-template-columns: 1fr 5fr;  
@@ -15,7 +10,6 @@ body > .container {
   min-height: 100vh;
 }
 
-/* Layout */
 .sidebar {
   padding: 10px;
   min-width: 150px;
@@ -45,11 +39,11 @@ main .projects .container {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-
 }
 
 main .projects .card {
   padding: 100px 0;
+
   background-color: lightgreen;
 }
 
