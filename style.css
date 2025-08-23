@@ -1,0 +1,68 @@
+html {
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+
+
+}
+
+body > .container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;  
+  gap: 10px;
+  min-height: 100vh;
+}
+
+/* Layout */
+.sidebar {
+  padding: 10px;
+  min-width: 150px;
+  
+  background-color: lightcoral;
+}
+
+header {
+  padding: 10px;
+  grid-column: 2 / -1;
+
+  background: lightblue;
+}
+
+section.content {
+  display: grid;
+  grid-template-rows: 150px 5fr;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+}
+
+main .projects .container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+}
+
+main .projects .card {
+  padding: 100px 0;
+  background-color: lightgreen;
+}
+
+main .sub-portals {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main .sub-portals .announcements .container {
+  background: lightgoldenrodyellow;
+}
+
+main .sub-portals .trending .container {
+  background: violet;
+}
