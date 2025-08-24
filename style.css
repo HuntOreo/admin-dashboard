@@ -7,6 +7,7 @@
   --bg-color: #dbdbdb;
   --tile-color: #fff;
   --primary-font-color: #000;
+  --icon-color: #fff;
 }
 
 .dark {
@@ -14,6 +15,7 @@
   --tile-color: #003b62;
   --primary-font-color: #fff;
   --primary-blue: #505050;
+  --icon-color: #fff;
 
 }
 

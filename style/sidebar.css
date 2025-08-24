@@ -28,8 +28,8 @@ nav.sidebar {
     "bottom-left bottom-right"
   ;
   gap: 3px;
-  height: 4em;
-  width: 4em;
+  height: 3em;
+  width: 3em;
 
 
   background-color: var(--primary-blue);
