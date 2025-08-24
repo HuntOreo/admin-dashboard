@@ -13,6 +13,8 @@
   --bg-color: #002e4d;
   --tile-color: #003b62;
   --primary-font-color: #fff;
+  --primary-blue: #505050;
+
 }
 
 html, body {
@@ -32,7 +34,6 @@ body > .container {
 
 .sidebar {
   padding: 10px;
-  min-width: 150px;
   
   background-color: lightcoral;
 }
@@ -67,7 +68,7 @@ main .projects {
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-
+  padding: 5px;
 }
 
 main .projects .container {

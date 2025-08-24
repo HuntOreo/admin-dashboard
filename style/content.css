@@ -4,7 +4,6 @@
 */
 .content header {
   background-color: var(--tile-color);
-  padding: ;
 }
 
 .content .projects .card {
@@ -28,7 +27,7 @@ header, .card, .twin > .container {
 }
 
 .content .projects .card {
-  border-left: 6px solid var(--primary-yellow);
+  border-left: 8px solid var(--primary-yellow);
   border-radius: 5px;
 }
 

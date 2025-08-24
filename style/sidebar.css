@@ -1,4 +1,66 @@
 nav.sidebar {
   background: var(--primary-blue);
   color: #fff;
+  font-weight: 700;
+  font-size: 1.4rem;
+  z-index: 1;
+}
+
+
+.sidebar .logo span {
+  font-size: 1.6rem;
+}
+
+.options .icons .logo {
+  font-size: 10px;
+  display: grid;
+  grid-template: 
+    "top-left top-right"
+    "top-left bottom-right"
+    "bottom-left bottom-right"
+  ;
+  gap: 3px;
+  height: 5em;
+  width: 5em;
+
+
+  background-color: var(--primary-blue);
+}
+
+.sidebar .options .icons .logo > * {
+  background: #fff;
+}
+
+.top-left {
+  grid-area: top-left;
+}
+
+.top-right {
+  grid-area: top-right;
+}
+
+.bottom-left {
+  grid-area: bottom-left;
+}
+
+.bottom-right {
+  grid-area: bottom-right;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-auto-rows: auto;
+}
+
+.options .icons {
+  height: 50px;
+  width: 50px;
+  grid-column: 1;
+}
+
+.options .icons > img {
+  height: 2.5rem;
+  width: 2.5rem;
+  align-self: ;
 }
