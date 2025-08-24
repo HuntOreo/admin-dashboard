@@ -23,7 +23,7 @@ html, body {
 body > .container {
   display: grid;
   grid-template-columns: 1fr 5fr;  
-  gap: 15px;
+
   min-height: 100vh;
 
   background-color: var(--bg-color);
@@ -47,20 +47,34 @@ header {
 .content {
   display: grid;
   grid-template-rows: 150px 5fr;
+  height: 100%;
 }
 
 main {
   display: grid;
   grid-template-columns: 3fr minmax(250px, auto);
-  grid-template-rows: 1fr;
-  gap: 10px;
-  padding-bottom: 15px;
+  grid-template-rows: minmax(0, 1fr);
+  gap: 15px;
+  padding: 0 20px 20px 20px;
+  min-height: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+main .projects {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+
 }
 
 main .projects .container {
   display: grid;
-  gap: 10px;
+  gap: 15px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  max-height: 0;
 }
 
 main .projects .card {
@@ -70,5 +84,5 @@ main .projects .card {
 main .sub-portals {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  gap: 15px;
+  gap: 10px;
 }

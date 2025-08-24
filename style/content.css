@@ -4,6 +4,7 @@
 */
 .content header {
   background-color: var(--tile-color);
+  padding: ;
 }
 
 .content .projects .card {
@@ -18,12 +19,12 @@
   General 
   ========
 */
-.content {
-  gap: 15px;
+header, .card, .twin > .container {
+  box-shadow: 0px 1px 4px gray;
 }
 
-.projects {
-  height: min-content;
+.content {
+  gap: 15px;
 }
 
 .content .projects .card {
@@ -38,6 +39,8 @@
 
 .sub-portals .twin > .container {
   flex: 1;
+  padding: 10px;
+  min-width: min-content;
 
   border-radius: 5px;
 }
