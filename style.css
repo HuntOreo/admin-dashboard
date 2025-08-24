@@ -7,13 +7,17 @@
   --bg-color: #dbdbdb;
   --tile-color: #fff;
   --primary-font-color: #000;
+  --icon-color: #fff;
+  --box-shadow-color: gray;
+ 
 }
 
 .dark {
   --bg-color: #002e4d;
   --tile-color: #003b62;
   --primary-font-color: #fff;
-  --primary-blue: #505050;
+  --icon-color: #fff;
+  --box-shadow-color: #1e1e1e;
 
 }
 
@@ -25,7 +29,6 @@ html, body {
 body > .container {
   display: grid;
   grid-template-columns: 1fr 5fr;  
-
   min-height: 100vh;
 
   background-color: var(--bg-color);
@@ -34,15 +37,12 @@ body > .container {
 
 .sidebar {
   padding: 10px;
-  
-  background-color: lightcoral;
+  min-width: min-content;  
 }
 
 header {
   padding: 10px;
   grid-column: 2 / -1;
-
-  background: lightblue;
 }
 
 .content {
