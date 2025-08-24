@@ -4,14 +4,22 @@ nav.sidebar {
   font-weight: 700;
   font-size: 1.4rem;
   z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  gap: 25px;
 }
 
+.sidebar .logo {
+  width: 100%;
+}
 
 .sidebar .logo span {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
-.options .icons .logo {
+.sidebar .logo .icon {
   font-size: 10px;
   display: grid;
   grid-template: 
@@ -20,14 +28,14 @@ nav.sidebar {
     "bottom-left bottom-right"
   ;
   gap: 3px;
-  height: 5em;
-  width: 5em;
+  height: 4em;
+  width: 4em;
 
 
   background-color: var(--primary-blue);
 }
 
-.sidebar .options .icons .logo > * {
+.sidebar .logo .icon > * {
   background: #fff;
 }
 
@@ -47,20 +55,30 @@ nav.sidebar {
   grid-area: bottom-right;
 }
 
-.options {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-auto-rows: auto;
+.sidebar > .logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
 }
 
-.options .icons {
-  height: 50px;
-  width: 50px;
-  grid-column: 1;
+.primary {
+  width: 100%;
 }
 
-.options .icons > img {
-  height: 2.5rem;
-  width: 2.5rem;
-  align-self: ;
+.primary .container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.primary .wrapper {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.primary .wrapper img {
+  height: 30px;
 }
