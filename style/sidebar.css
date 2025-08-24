@@ -31,7 +31,6 @@ nav.sidebar {
   height: 3em;
   width: 3em;
 
-
   background-color: var(--primary-blue);
 }
 
@@ -62,23 +61,28 @@ nav.sidebar {
 
 }
 
-.primary {
+.menu {
   width: 100%;
 }
 
-.primary .container {
+.menu .container {
   display: flex;
   gap: 10px;
   width: 100%;
 }
 
-.primary .wrapper {
+.menu .wrapper {
   width: 40px;
   height: 40px;
   display: flex;
   justify-content: center;
 }
 
-.primary .wrapper img {
-  height: 30px;
+.menu span {
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.menu .wrapper img {
+  height: 1.1em;
 }
