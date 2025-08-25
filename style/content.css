@@ -43,3 +43,37 @@ header, .card, .twin > .container {
 
   border-radius: 5px;
 }
+
+/* 
+  Header | Layout
+  ================
+*/
+header {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+header .profile-primary .container,
+header .profile-secondary .container {
+  display: flex;
+}
+
+/* 
+  Header | General
+  =================
+*/
+header .profile-pic {
+  padding: 3px;
+  
+  background-color: var(--primary-yellow);
+  border-radius: 50%;
+}
+
+header .profile-primary .profile-pic {
+  height: 3.5em;
+}
+
+header .profile-secondary .profile-pic {
+  height: 3em;
+}
