@@ -67,7 +67,7 @@ header .file-quick-menu .container {
 }
 
 header .search {
-  justify-content: center;
+  justify-content: start;
 }
 
 header .search .container {
@@ -75,7 +75,7 @@ header .search .container {
   align-items: center;
   gap: 10px;
   padding: 10px;
-  max-width: 80%;
+  max-width: 800px;
 }
 
 header .profile-secondary .container {
@@ -84,8 +84,9 @@ header .profile-secondary .container {
   gap: 20px;
 }
 
-header .profile-primary {
-  padding: 0 2vw;
+header .profile-primary,
+header .search {
+  padding: 0 1vw;
 }
 
 header .profile-primary .container {
@@ -95,6 +96,7 @@ header .profile-primary .container {
 header .file-quick-menu .container {
   flex: 1;
   justify-content: space-around;
+  gap: 5px;
 }
 
 /* 
@@ -118,4 +120,29 @@ header .profile-secondary .profile-pic {
 
 header .search input {
   flex: 1;
+  padding: 4px 10px;
+  
+  border-radius: 20px;
+  border: none;
+  background-color: #dbdbdb;
+}
+
+header .profile-secondary span {
+  font-weight: 700;
+}
+
+header .file-quick-menu button {
+  min-width: 100px;
+  padding: 10px 5px;
+
+  border-radius: 20px;
+  border: none;
+  background: var(--primary-blue); 
+  color: #fff;
+  font-weight: 600;
+}
+
+header .profile-secondary svg,
+header .search svg {
+  fill: var(--primary-font-color);
 }

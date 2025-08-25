@@ -62,7 +62,6 @@ main {
   overflow: hidden;
 }
 
-
 main .projects {
   min-height: 0;
   display: flex;
