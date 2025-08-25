@@ -1,0 +1,88 @@
+main .sub-portals .twin {
+  max-width: 300px;
+}
+
+main .sub-portals .twin .container {
+  padding: 30px;
+}
+
+main .sub-portals .twin .wrapper {
+  padding: 10px 0;
+}
+
+/* 
+  Announcements
+  ==============
+*/
+.announcements {
+  font-size: 10%;
+}
+
+.announcements h3 {
+  font-size: 18px;
+}
+
+.announcements .container {
+  max-height: 350px;
+}
+
+.announcements .wrapper {
+  border-bottom: 1px solid #909090;
+}
+
+.announcements .wrapper:last-of-type {
+  border-bottom: none;
+}
+
+.announcements h4 {
+  padding: 0 5px;
+  font-size: 16px;
+}
+
+.announcements .desc {
+  max-height: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0 5px;
+
+  color: #909090;
+  font-size: clamp(12px, 0.7em, 16px);
+  font-weight: 600;
+} 
+
+/* 
+  Profiles
+  =========
+*/
+.trending {
+  height: fit-content;
+}
+
+.trending .container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.trending .profile-pic {
+  height: 3.5em;
+  
+  border-radius: 50%;
+  background-color: var(--primary-blue);
+}
+
+.trending .profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.trending .profile .wrapper span {
+  font-weight: 600;
+}
+
+.trending .profile .wrapper p {
+  margin: 0;
+  
+  color: #909090;
+}
