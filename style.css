@@ -3,6 +3,10 @@
   --primary-yellow: #e5c409;
 }
 
+/* 
+  Themes
+  =======
+*/
 .light {
   --bg-color: #dbdbdb;
   --tile-color: #fff;
@@ -17,6 +21,10 @@
   --primary-font-color: #fff;
   --icon-color: #fff;
   --box-shadow-color: #1e1e1e;
+}
+
+.hide-theme {
+  display: none;
 }
 
 html, body {
