@@ -62,12 +62,19 @@ main {
   overflow: hidden;
 }
 
-
 main .projects {
   min-height: 0;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
+  padding: 5px;
+  position: relative;
+}
+
+main .projects h3 {
+  position: sticky;
+  top: -10px;
+  background-color: var(--bg-color);
   padding: 5px;
 }
 
@@ -80,6 +87,7 @@ main .projects .container {
 
 main .projects .card {
   padding: 100px 0;
+  margin: 5px;
 }
 
 main .sub-portals {
