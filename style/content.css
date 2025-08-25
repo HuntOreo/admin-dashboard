@@ -43,3 +43,79 @@ header, .card, .twin > .container {
 
   border-radius: 5px;
 }
+
+/* 
+  Header | Layout
+  ================
+*/
+header {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+header .search,
+header .profile-primary,
+header .profile-secondary,
+header .file-quick-menu,
+header .profile-primary .container,
+header .profile-secondary .container, 
+header .search .container,
+header .file-quick-menu .container {
+  display: flex;
+  align-items: center;
+}
+
+header .search {
+  justify-content: center;
+}
+
+header .search .container {
+  flex: 1;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  max-width: 80%;
+}
+
+header .profile-secondary .container {
+  flex: 1;
+  justify-content: center;
+  gap: 20px;
+}
+
+header .profile-primary {
+  padding: 0 2vw;
+}
+
+header .profile-primary .container {
+  gap: 20px;
+}
+
+header .file-quick-menu .container {
+  flex: 1;
+  justify-content: space-around;
+}
+
+/* 
+  Header | General
+  =================
+*/
+header .profile-pic {
+  padding: 3px;
+  
+  background-color: var(--primary-yellow);
+  border-radius: 50%;
+}
+
+header .profile-primary .profile-pic {
+  height: 3.5em;
+}
+
+header .profile-secondary .profile-pic {
+  height: 3em;
+}
+
+header .search input {
+  flex: 1;
+}
