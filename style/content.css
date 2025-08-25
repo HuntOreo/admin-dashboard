@@ -72,16 +72,29 @@ header .search {
 
 header .search .container {
   flex: 1;
-  padding: 10px;
   align-items: center;
-  max-width: 75%;
   gap: 10px;
+  padding: 10px;
+  max-width: 80%;
 }
 
 header .profile-secondary .container {
   flex: 1;
+  justify-content: center;
   gap: 20px;
-  font-weight: 700;
+}
+
+header .profile-primary {
+  padding: 0 2vw;
+}
+
+header .profile-primary .container {
+  gap: 20px;
+}
+
+header .file-quick-menu .container {
+  flex: 1;
+  justify-content: space-around;
 }
 
 /* 
