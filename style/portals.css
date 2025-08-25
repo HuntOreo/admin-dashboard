@@ -10,25 +10,79 @@ main .sub-portals .twin .wrapper {
   padding: 10px 0;
 }
 
-main .sub-portals .announcements .wrapper {
+/* 
+  Announcements
+  ==============
+*/
+.announcements {
+  font-size: 10%;
+}
+
+.announcements h3 {
+  font-size: 18px;
+}
+
+.announcements .container {
+  max-height: 350px;
+}
+
+.announcements .wrapper {
   border-bottom: 1px solid #909090;
 }
 
-main .sub-portals .announcements .wrapper:last-of-type {
+.announcements .wrapper:last-of-type {
   border-bottom: none;
 }
 
-main .sub-portals .announcements h4 {
+.announcements h4 {
   padding: 0 5px;
+  font-size: 16px;
 }
 
-main .sub-portals .announcements .desc {
+.announcements .desc {
   max-height: 100px;
   text-overflow: ellipsis;
   overflow: hidden;
   padding: 0 5px;
 
   color: #909090;
-  font-size: 0.9em;
+  font-size: clamp(12px, 0.7em, 16px);
   font-weight: 600;
 } 
+
+/* 
+  Profiles
+  =========
+*/
+.trending {
+  height: fit-content;
+}
+
+.trending .container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.trending .profile-pic {
+  height: 3.5em;
+  
+  border-radius: 50%;
+  background-color: var(--primary-blue);
+}
+
+.trending .profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.trending .profile .wrapper span {
+  font-weight: 600;
+}
+
+.trending .profile .wrapper p {
+  margin: 0;
+  
+  color: #909090;
+}
