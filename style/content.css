@@ -146,3 +146,33 @@ header .profile-secondary svg,
 header .search svg {
   fill: var(--primary-font-color);
 }
+
+/* 
+  Projects
+  =========
+*/
+.projects .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects .card .icons {
+  margin-top: auto;
+  align-self: flex-end;
+  display: flex;
+  gap: 10px;
+}
+
+.projects .card .icons svg {
+  fill: var(--primary-font-color);
+  position: relative;
+}
+
+.projects .card .project-desc {
+  padding: 10px;
+
+  color: #909090;
+  font-size: 0.8em;
+}
+
+
