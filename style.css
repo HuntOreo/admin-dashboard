@@ -9,7 +9,6 @@
   --primary-font-color: #000;
   --icon-color: #fff;
   --box-shadow-color: gray;
- 
 }
 
 .dark {
@@ -18,14 +17,16 @@
   --primary-font-color: #fff;
   --icon-color: #fff;
   --box-shadow-color: #1e1e1e;
-
 }
 
 html, body {
   min-height: 100vh;
 }
 
-/* Layout */
+/* 
+  Layout 
+  =======
+*/
 body > .container {
   display: grid;
   grid-template-columns: 1fr 5fr;  
@@ -75,7 +76,6 @@ main .projects h3 {
   padding: 5px;
 }
 
-
 main .projects .container {
   display: grid;
   gap: 15px;
@@ -88,7 +88,6 @@ main .projects .card {
   padding: 10px 20px;
   margin: 0 5px;
 }
-
 
 main .sub-portals {
   display: grid;
