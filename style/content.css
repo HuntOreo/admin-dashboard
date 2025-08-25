@@ -54,9 +54,34 @@ header {
   grid-template-rows: 1fr 1fr;
 }
 
+header .search,
+header .profile-primary,
+header .profile-secondary,
+header .file-quick-menu,
 header .profile-primary .container,
-header .profile-secondary .container {
+header .profile-secondary .container, 
+header .search .container,
+header .file-quick-menu .container {
   display: flex;
+  align-items: center;
+}
+
+header .search {
+  justify-content: center;
+}
+
+header .search .container {
+  flex: 1;
+  padding: 10px;
+  align-items: center;
+  max-width: 75%;
+  gap: 10px;
+}
+
+header .profile-secondary .container {
+  flex: 1;
+  gap: 20px;
+  font-weight: 700;
 }
 
 /* 
@@ -76,4 +101,8 @@ header .profile-primary .profile-pic {
 
 header .profile-secondary .profile-pic {
   height: 3em;
+}
+
+header .search input {
+  flex: 1;
 }
